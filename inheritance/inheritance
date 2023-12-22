@@ -1,0 +1,109 @@
+image.png
+Types Of Inheritance:-
+    1.Single inheritance
+    2.Multilevel inheritance
+    3.Multiple inheritance
+    4.Hierarchical inheritance
+    5.Hybrid inheritance
+
+[1. Single Inheritance:]-> 
+       ~> In single inheritance, a class is allowed to inherit from only one class.
+       ~> i.e. one subclass is inherited by one base class only.
+
+Single inheritance in C++
+
+(Syntax:) 
+
+class subclass_name : access_mode base_class
+{
+  // body of subclass
+};
+OR
+class A
+{ 
+... .. ... 
+};
+class B: public A
+{
+... .. ...
+};
+
+2. Multiple Inheritance:
+     Multiple Inheritance is a feature of C++ where a class can inherit from more than one class.
+      i.e one subclass is inherited from more than one base class.
+
+Multiple inheritance in C++
+
+Syntax: 
+
+class subclass_name : access_mode base_class1, access_mode base_class2, ....
+{
+  // body of subclass
+};
+class B
+{ 
+... .. ... 
+};
+class C
+{
+... .. ...
+};
+class A: public B, public C
+{
+... ... ...
+};
+Here, the number of base classes will be separated by a comma (',') and the access mode for every base class must be specified. 
+
+3. Multilevel Inheritance:
+         In this type of inheritance, a derived class is created from another derived class.
+
+Multilevel Inheritance in C++
+
+Syntax:-
+
+class C
+{ 
+... .. ... 
+};
+class B:public C
+{
+... .. ...
+};
+class A: public B
+{
+... ... ...
+};
+
+4. Hierarchical Inheritance: 
+    In this type of inheritance, more than one subclass is inherited from a single base class. 
+    i.e. more than one derived class is created from a single base class.
+
+Hierarchical Inheritance in C++
+
+Syntax:-
+
+class A  
+{  
+    // body of the class A.  
+}    
+class B : public A   
+{  
+    // body of class B.  
+}  
+class C : public A  
+{  
+    // body of class C.  
+}   
+class D : public A  
+{  
+    // body of class D.  
+}   
+
+5. Hybrid (Virtual) Inheritance:
+ Hybrid Inheritance is implemented by combining more than one type of inheritance. 
+ For example: Combining Hierarchical inheritance and Multiple Inheritance. 
+Below image shows the combination of hierarchical and multiple inheritances:
+
+Hybrid Inheritance in C++.
+
+
